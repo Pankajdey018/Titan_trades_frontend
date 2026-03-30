@@ -1,0 +1,66 @@
+.vertical-graph-card {
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  border-radius: 24px;
+  background:
+    radial-gradient(circle at top right, rgba(96, 165, 250, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.96), rgba(248, 250, 252, 0.98));
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.08);
+  padding: 22px 22px 18px;
+}
+
+.vertical-graph-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.vertical-graph-kicker {
+  margin: 0 0 6px;
+  color: #2563eb;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.vertical-graph-header h3 {
+  margin: 0;
+  color: #0f172a;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.vertical-graph-meta {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: rgba(37, 99, 235, 0.08);
+  color: #1d4ed8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.vertical-graph-canvas {
+  height: 340px;
+}
+
+@media (max-width: 768px) {
+  .vertical-graph-card {
+    padding: 18px 16px 14px;
+    border-radius: 20px;
+  }
+
+  .vertical-graph-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .vertical-graph-canvas {
+    height: 300px;
+  }
+}
